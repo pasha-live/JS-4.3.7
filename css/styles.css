@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #C4C4C4;
+}
+
+.app {
+    margin: 62px auto 0 auto;
+}
+
+.search-input {
+    border: 0px solid #ccc;
+    max-width: 500px;
+    height: 61px;
+    padding: 5px 0 5px 13px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.autoComplitRepositoriesName {
+    padding: 5px 0 5px 13px;
+
+    max-width: 500px;
+    min-height: 44px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+
+    background: #E3E3E3;
+    border: 2px solid #000000;
+}
+
+.autoComplitRepositoriesName:hover {
+    background: #65CDF9;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.selectedRepositoryWrapper {
+    padding: 8px 17px;
+
+    width: 503px;
+
+    background: #E27BEB;
+    border: 1px solid #000000;
+}
+
+.selectedRepository {
+    position: relative;
+
+    width: 470px;
+    min-height: 85px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.listWrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cross {
+    background: none;
+    border: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 25%;
+    right: 5%;
+}
+
+.cross-line {
+    position: absolute;
+
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    background: #FF0000;
+
+    top: 50%;
+    right: 5%;
+}
+
+.cross-line:first-child {
+    transform: rotate(45deg);
+}
+
+.cross-line:last-child {
+    transform: rotate(-45deg);
+}
+
+.info-repository {
+    width: 300px;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
